@@ -15,4 +15,17 @@ By default, Excel uses letter notation for their columns. To see the number form
 -Choose "Formulas" from left-hand menu
 -Under "Working with formulas", click "R1C1 reference"
 
+## Editing the Config.ini File
 Find the new column number and enter into the config.ini file and re-run.
+
+```[spreadsheet]
+path=c:\Temp
+
+[columns]
+;must be in number format, not letter
+description_col=34
+title_col=2
+permanent_location_col=19
+
+[misc]
+delete_when_done=active
